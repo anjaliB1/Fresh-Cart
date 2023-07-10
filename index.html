@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CSS link-->
+    <link rel="stylesheet" href="style.css">
+    <!--JavaScript link-->
+    <script src="script.js" defer></script>
+    <!--Fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-shopping-cart"></i>Fresh Cart</a>
+        <!--Navigation links-->
+        <nav class="nav-bar">
+            <a href="#home">Home</a>
+            <a href="#offers">Offers</a>
+            <a href="#products">Products</a>
+            <a href="#catagories">Catagories</a>
+            <a href="#reviews">Reviews</a>
+        </nav>
+        <!--Navigation buttons-->
+        <div class="nav-icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-cart-shopping" id="cart-btn"></div>
+            <div class="fas fa-user" id="user-btn"></div>
+        </div>
+        <!--Search-->
+        <form action="" class="search-form">
+            <input type="search" id="search-bar" placeholder="Search for products...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+        <!--Cart-->
+        <div class="my-cart">
+            <div class="shopping-item">
+                <img src="images/mockup-graphics-xWRwCmhcWDM-unsplash.jpg" alt="">
+                <div class="item-content">
+                    <h3>Cashew</h3>
+                    <span class="item-weight">500g</span><br>
+                    <span class="item-price">₹359/-</span>
+                    <span class="item-quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="shopping-item">
+                <img src="images/mockup-graphics-y6PeMgIa2Xo-unsplash.jpg" alt="">
+                <div class="item-content">
+                    <h3>Almond</h3>
+                    <span class="item-weight">750g</span><br>
+                    <span class="item-price">₹481/-</span>
+                    <span class="item-quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="shopping-item">
+                <img src="images/mockup-graphics-PO06zMP4BUg-unsplash.jpg" alt="">
+                <div class="item-content">
+                    <h3>Moong Lentil</h3>
+                    <span class="item-weight">1kg</span><br>
+                    <span class="item-price">₹149/-</span>
+                    <span class="item-quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="total-shopping">
+                <span>Total: ₹999/-</span>
+                <button>Checkout</button>
+            </div>
+        </div>
+        <!--Login-->
+        <form action="" class="login-form">
+            <input type="email" name="email" id="email" placeholder="your email here">
+            <input type="password" name="password" id="password" placeholder="your password here"><br>
+            <span>Forgot your password? <a href="#">Click here</a></span><br><br>
+            <button>Log In</button><br><br>
+            <span>Don't have an account? <a href="#">Sign up</a></span>
+        </form>
+    </header>
+    <!--Main-->
+    <main>
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="content">
+                <h3><span>Fresh</span> & <span>Organic</span> products in your <span>Cart</span></h3>
+                <p>Your go-to online grocery store for high-quality, fresh produce delivered right to your doorstep.</p>
+                <button>Shop now!</button>
+            </div>
+        </section>
+        <!--Offers-->
+        <section class="offers" id="offers">
+            <p class="section-headings">Today's Offers</p>
+            <div class="offers-box">
+                <div class="box-content">
+                    <h3>50% Off</h3>
+                    <p>Get upto 50% off on all seasonal fruits and vegetables</p>
+                    <button>View Products</button>
+                </div>
+                <div class="box-content">
+                    <h3>Buy 1 Get 1 Free</h3>
+                    <p>Buy any one of the following products to get one more product free</p>
+                    <button>See offer</button>
+                </div>
+                <div class="box-content">
+                    <h3>Free Gifts</h3>
+                    <p>This festive season, shop more of the treats to get free gifts</p>
+                    <button>Get Gifts</button>
+                </div>
+            </div>
+        </section>
+        <!--Products-->
+        <section class="products" id="products">
+            <p class="section-headings">Top Products</p>
+            <div class="wrapper">
+                <div class="box-content">
+                    <img src="images/mockup-graphics-W6hOoTINcbc-unsplash.jpg" alt="">
+                    <h3>Brown Bread</h3>
+                    <div class="info">
+                        <span>200g</span>
+                        <span>₹29/-</span>
+                        <div class="qty">
+                            <label for="qty">Qty </label>
+                            <input type="number" id="qty" placeholder="1" min="1">
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="box-content">
+                    <img src="images/mockup-graphics-vVjA1KeKg-w-unsplash.jpg" alt="">
+                    <h3>Banana</h3>
+                    <div class="info">
+                        <span>1kg</span>
+                        <span>₹49/-</span>
+                        <div class="qty">
+                            <label for="qty">Qty </label>
+                            <input type="number" id="qty" placeholder="1" min="1">
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="box-content">
+                    <img src="images/mockup-graphics-m7ijvnNGaV0-unsplash.jpg" alt="">
+                   <h3>Coffee Beans</h3>
+                    <div class="info">
+                        <span>300g</span>
+                        <span>₹291/-</span>
+                        <div class="qty">
+                            <label for="qty">Qty </label>
+                            <input type="number" id="qty" placeholder="1" min="1">
+                        </div>
+                    </div>
+                    <div class="price"></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="box-content">
+                    <img src="images/mockup-graphics-ND9W782cP-Q-unsplash.jpg" alt="">
+                   <h3>Tomato</h3>
+                    <div class="info">
+                        <span>500g</span>
+                        <span>₹89/-</span>
+                        <div class="qty">
+                            <label for="qty">Qty </label>
+                            <input type="number" id="qty" placeholder="1" min="1">
+                        </div>
+                    </div>
+                    <div class="price"></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </section>
+        <!--Catagories-->
+        <section class="catagories" id="catagories">
+            <p class="section-headings">Top Catagories</p>
+           <div class="wrapper">
+            <div class="box-content-c">
+                <img src="images/alexander-schimmeck-ks5flsI1mNo-unsplash.jpg" alt="">
+                <button>Fruits & Vegetables</button>
+            </div>
+            <div class="box-content-c">
+                <img src="images/tamanna-rumee-dqVPEGkuR_U-unsplash.jpg" alt="">
+                <button>Masala</button>
+            </div>
+            <div class="box-content-c">
+                <img src="images/maddi-bazzocco-UhrHTmVBzzE-unsplash.jpg" alt="">
+                <button>Nuts</button>
+            </div>
+            <div class="box-content-c">
+                <img src="images/suheyl-burak-BJXiSrrCvA8-unsplash.jpg" alt="">
+                <button>Pulses</button>
+            </div>
+            <div class="box-content-c">
+                <img src="images/disiana-caballero-s4mpAZSvcbE-unsplash.jpg" alt="">
+                <button>Legumes</button>
+            </div>
+           </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <p class="section-headings">Our Reviews</p>
+            <div class="offers-box">
+                <div class="box-content">
+                    <h3>Excellent Fresh Produce and Convenient Shopping Experience</h3>
+                    <p>I recently started using Fresh Cart for my grocery shopping needs, and I must say I'm thoroughly impressed. The variety and quality of fresh produce they offer are exceptional. Every item I received was perfectly ripe and delicious. The website is user-friendly, making it easy to navigate and find exactly what I need.</p>
+                </div>
+                <div class="box-content">
+                    <h3>Good Selection of Organic Products</h3>
+                    <p>Fresh Cart does have an impressive selection of organic fruits, vegetables, and other specialty products. The quality of the items I did receive was generally good, and the packaging was adequate to protect them during transit.</p>
+                </div>
+                <div class="box-content">
+                    <h3>Fresh Cart Delivers Freshness and Convenience to My Doorstep</h3>
+                    <p>The selection of fresh produce is outstanding. Every time I receive my order, I'm amazed at the quality of the fruits and vegetables. They are always fresh, and the expiration dates are well ahead, ensuring I have plenty of time to enjoy them. The packaging is sturdy, and I've never had any issues with damaged items.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot-row">
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="foot-row">
+                <a href="#">Contact us</a>
+                <a href="#">Our Services</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Careers</a>
+            </div>
+            
+            <div class="foot-row">
+                Copyright &copy; 2023 - Fresh Cart, All Rights Reserved
+            </div>
+            </div>
+    </footer>
+</body>
+</html>

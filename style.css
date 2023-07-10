@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --border-radius: 0.5rem;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+body {
+    font-size: 17px;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+    scroll-padding-top: 7rem; 
+    background-color: orange;
+}
+
+/*Header styling*/
+header {
+    position: fixed; 
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: green;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+}
+
+header .logo i {
+    color: orange; 
+}
+
+header nav a{
+    font-size: 1.25rem;
+    margin: 0 1rem;
+    color: white;
+    padding: 0.5rem;
+}
+
+header nav a:hover{
+    background-color: orange;
+    border-radius: var(--border-radius);
+}
+
+/*Header icon styling*/
+.nav-icons div{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-icons div:hover{
+    background-color: orange;
+    color: white;
+}
+
+/*Header icon - menu button*/
+ #menu-btn {
+    display: none;
+ }
+
+/*Header icon - search button*/
+ .search-form {
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 40rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+ }
+
+ .search-form.active {
+    right: 1.5rem;
+    transition: 0.3s linear;
+ }
+
+ .search-form input{
+    height: 100%; width: 100%;
+    font-size: 1.15rem;
+    color: black;
+    padding: 0.5rem 1.5rem;
+ }
+
+ .search-form label{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: black;
+    cursor: pointer;
+ }
+
+ .search-form label:hover{
+    color: orange;
+ }
+
+/*Header icon - shopping cart button*/
+.my-cart {
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 20rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.my-cart.active {
+    right: 1.5rem;
+    transition: 0.3s linear;
+}
+
+.shopping-item {
+    width: 17rem;
+    padding: 0.5rem;
+    display: flex;
+}
+
+
+.shopping-item img{
+    width: 7em; height: 7rem;
+}
+
+.item-content {
+    padding-left: 1rem;
+}
+
+.total-shopping{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    background-color: orange;
+    color: white;
+}
+
+button {
+    padding: 0.1rem 1rem;
+    font-size: 1.25rem;
+    border-radius: var(--border-radius);
+    background-color: green;
+    color: white;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+    color: white;
+}
+
+/*Header icon - Login button*/
+.login-form {
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 25rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.login-form.active {
+    right: 1.5rem;
+    transition: 0.3s linear;
+}
+
+.login-form input {
+    height: 100%; width: 90%;
+    font-size: 1.15rem;
+    color: black;
+    padding: 0.5rem 1.5rem;
+    background-color: azure;
+    margin: 1rem;
+}
+
+/*Main*/
+/*Section*/
+section {
+    padding: 5rem 1rem 0rem;
+}
+
+/*Home*/
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/supermarket-banner-concept-with-ingredients.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    padding: 9rem 0rem 3rem;
+}
+
+.home .content {
+    text-align: center;
+    padding: 1.5rem;
+    max-width: 90vh;
+}
+
+.home .content h3 {
+    color: black;
+    font-size: 1.9rem;
+    text-shadow: 0 0 3px white;
+}
+
+.home .content p{
+    padding: 1rem 0;
+    font-size: 17px;
+    color: green;
+    text-shadow: 0 0 1px black;
+}
+
+/*Offers*/
+.offers {
+    text-align: center;
+}
+
+.section-headings {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.offers-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.offers .box-content {
+    width: 27rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.offers .box-content:hover {
+    border: 3px solid black;
+}
+
+.offers .box-content img {
+    width: 12.5rem; height: 12.5rem;
+}
+
+.offers .box-content p{
+    padding: 1rem 0;
+}
+
+/*Products*/
+.products {
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products .box-content{
+    width: 17rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    margin: 1rem; padding: 1rem;
+    background-color: white;
+}
+
+.products .box-content:hover{
+    border: 3px solid black;
+}
+
+.products .box-content img{
+    width: 15rem; height: 15rem;
+    border-radius: var(--border-radius);
+}
+
+.products .box-content .info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: grey;
+}
+
+.products .box-content .info .qty input{
+    width: 3rem;
+    border: 1px solid grey;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.products .box-content .stars{
+    color: gold;
+    margin-bottom: 1rem;
+}
+
+/*Catagories*/
+.catagories {
+    text-align: center;
+}
+
+.catagories .box-content-c {
+    width: 25rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    margin: 1rem; padding: 1rem;
+    background-color: white;
+}
+
+.catagories .box-content-c:hover {
+    border: 3px solid black;
+}
+
+.catagories .box-content-c img {
+    width: 20rem; height: 15rem;
+    border-radius: var(--border-radius);
+    border: 3px solid green;
+    margin-bottom: 1rem;
+}
+
+/*Review*/
+.reviews {
+    text-align: center;
+}
+
+.section-headings {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.reviews-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reviews .box-content {
+    width: 27rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.reviews .box-content:hover {
+    border: 3px solid black;
+}
+
+.reviews .box-content img {
+    width: 12.5rem; height: 12.5rem;
+}
+
+.reviews .box-content p{
+    padding: 1rem 0;
+}
+
+/*Footer*/
+footer {
+    background: white;
+    padding: 3rem 0rem;
+    text-align: center;
+}
+    
+footer .foot-row, .foot-row a {
+    margin: 1.5rem;
+    color: black;
+    font-size: 1rem;
+}
+ 
+footer .foot-row a:hover{
+    color: orange;
+} 
+
+footer .foot-row .icons a {
+    color: green;
+   font-size: 1.9rem;
+}
+
+footer .foot-row .icons a:hover {
+    color: orange;
+}
+
+/*Media*/
+@media (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header nav a{
+        font-size: 1.05rem;
+        margin: 0 0.5rem;
+    }
+
+    /*Header icon styling*/
+    .nav-icons div{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*Header icon - Menu button*/
+    #menu-btn {
+        display: inline;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 20rem;
+        background-color: white;
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
+    }
+
+    .nav-bar.active {
+        right: 1.5rem;
+        transition: 0.3s linear;
+    }
+
+    .nav-bar a{
+        color: black;
+        display: block;
+        margin: 1rem 0rem;
+        text-align: center;
+    }
+
+    /*Header icon - search button*/
+    .search-form {
+        width: 20rem;
+    }
+
+    /*Header icon - Login button*/
+    .login-form {
+        width: 20rem;
+    }
+
+    /*Footer*/
+    footer{
+        text-align:left;
+        padding:5%;
+    }
+
+    footer .foot-row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+
+    footer .foot-row a i{
+        margin:0% 3%;
+    }
+}
+
+@media (max-width: 350px) {
+    body {
+        font-size: 12.5px;
+    }
+
+    .nav-bar, .search-form, .my-cart, .login-form {
+        width: 15rem;
+    }
+
+    header {
+        padding: 0.3rem 0.5rem;
+    }
+
+    header .logo {
+        font-size: 1.25rem;
+    }
+
+    header nav a{
+        font-size: 0.9rem;
+        margin: 0.1rem;
+    }
+
+    /*Header icon styling*/
+    .nav-icons div{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+
+    .search-form input{
+        font-size: 0.9rem;
+        padding: 0.1rem 0.5rem;
+    }
+
+    .search-form label{
+        font-size: 1.1rem;
+        padding-right: 0.5rem;
+     }
+
+     .shopping-item {
+        width: 17.5rem;
+        padding: 0.1rem;
+        display: flex;
+    }
+    
+    .shopping-item img{
+        width: 5rem; height: 5rem;
+    }
+    
+    .item-content {
+        padding-left: 0.4rem;
+    }
+    
+    .total-shopping{
+        padding: 0.3rem;
+        font-size: 1rem;
+    }
+    
+    button {
+        padding: 0.1rem 0.5rem;
+        font-size: 1rem;
+    }
+    
+    /*Header icon - Login button*/
+    .login-form {
+        font-size: 0.7rem;
+    }
+    
+    .login-form input {
+        font-size: 0.9rem;
+        padding: 0.1rem 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
